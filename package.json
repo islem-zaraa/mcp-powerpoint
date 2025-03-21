@@ -13,9 +13,21 @@
   "keywords": [
     "mcp",
     "powerpoint",
-    "pptx"
+    "pptx",
+    "model-context-protocol",
+    "presentation",
+    "slides",
+    "ai-assistant"
   ],
-  "author": "",
+  "author": "islem-zaraa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/islem-zaraa/mcp-powerpoint.git"
+  },
+  "homepage": "https://github.com/islem-zaraa/mcp-powerpoint",
+  "bugs": {
+    "url": "https://github.com/islem-zaraa/mcp-powerpoint/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "pptxgenjs": "^3.12.0",
@@ -25,5 +37,12 @@
   },
   "devDependencies": {
     "jest": "^29.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "mcp": {
+    "entryPoint": "src/mcp-plugin.js",
+    "manifestPath": "mcp-manifest.json"
   }
 } 
