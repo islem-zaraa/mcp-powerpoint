@@ -4,7 +4,7 @@
   "description": "Model Context Protocol plugin for PowerPoint",
   "main": "src/index.js",
   "bin": {
-    "mcp-powerpoint": "./src/index.js"
+    "mcp-powerpoint": "src/index.js"
   },
   "scripts": {
     "test": "jest",
@@ -22,7 +22,7 @@
   "author": "islem-zaraa",
   "repository": {
     "type": "git",
-    "url": "https://github.com/islem-zaraa/mcp-powerpoint.git"
+    "url": "git+https://github.com/islem-zaraa/mcp-powerpoint.git"
   },
   "homepage": "https://github.com/islem-zaraa/mcp-powerpoint",
   "bugs": {
@@ -45,4 +45,4 @@
     "entryPoint": "src/mcp-plugin.js",
     "manifestPath": "mcp-manifest.json"
   }
-} 
+}
