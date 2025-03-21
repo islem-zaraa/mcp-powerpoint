@@ -4,11 +4,13 @@
   "description": "Model Context Protocol plugin for PowerPoint",
   "main": "src/index.js",
   "bin": {
-    "mcp-powerpoint": "src/index.js"
+    "mcp-powerpoint": "src/index.js",
+    "mcp-powerpoint-server": "src/mcp-server.js"
   },
   "scripts": {
     "test": "jest",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "server": "node src/mcp-server.js"
   },
   "keywords": [
     "mcp",
@@ -42,7 +44,7 @@
     "node": ">=14.0.0"
   },
   "mcp": {
-    "entryPoint": "src/mcp-plugin.js",
+    "entryPoint": "src/mcp-server.js",
     "manifestPath": "mcp-manifest.json"
   }
 }
