@@ -1,6 +1,6 @@
 {
   "name": "mcp-powerpoint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Model Context Protocol plugin for PowerPoint",
   "main": "src/index.js",
   "bin": {
@@ -53,6 +53,10 @@
     "entrypoint": "src/mcp-server.js",
     "manifest": "mcp-manifest.json",
     "description": "Create and manipulate PowerPoint presentations with AI",
-    "tags": ["productivity", "office", "document"]
+    "tags": [
+      "productivity",
+      "office",
+      "document"
+    ]
   }
 }
