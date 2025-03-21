@@ -1,6 +1,6 @@
-# Publishing to MCP Registry
+# Publishing to MCP Directories
 
-Follow these steps to publish your MCP PowerPoint plugin to the central MCP registry:
+Follow these steps to publish your MCP PowerPoint plugin to various MCP directories and make it discoverable by users.
 
 ## Prerequisites
 
@@ -14,59 +14,49 @@ Follow these steps to publish your MCP PowerPoint plugin to the central MCP regi
 
 ### 1. Publish to NPM
 
+This is the most important step as most MCP server directories will pull information from npm.
+
 ```bash
 # Login to NPM (if not already logged in)
 npm login
 
 # Publish the package
 npm publish
-# OR for scoped package:
-# npm publish --access public
 ```
 
-### 2. Register with MCP Registry
+### 2. Submit to MCP Directories
 
-There are two ways to register your plugin with the MCP registry:
+There isn't a single centralized MCP Registry. Instead, submit your plugin to these popular MCP directories:
 
-#### Option 1: Submit a PR to the MCP Registry Repository
+#### OpenTools (https://opentools.dev/)
 
-1. Fork the [MCP Registry Repository](https://github.com/mcp-registry/mcp-plugins-directory)
-2. Add your plugin information to the `plugins.json` file:
+OpenTools is an open registry for finding and installing MCP servers.
 
-```json
-{
-  "name": "mcp-powerpoint",
-  "version": "0.1.0",
-  "description": "MCP plugin for PowerPoint operations",
-  "author": "islem-zaraa",
-  "repository": "https://github.com/islem-zaraa/mcp-powerpoint",
-  "npmPackage": "mcp-powerpoint",
-  "manifestUrl": "https://raw.githubusercontent.com/islem-zaraa/mcp-powerpoint/main/mcp-manifest.json",
-  "tags": ["powerpoint", "presentation", "slides", "office"]
-}
-```
+- Visit [OpenTools submission page](https://opentools.dev/submit)
+- Submit your package information including npm package name and GitHub repository
 
-3. Submit a Pull Request to the repository
+#### Awesome MCP Servers Lists
 
-#### Option 2: Use the MCP Registry CLI Tool
+Submit a pull request to these curated lists of MCP servers:
 
-1. Install the MCP Registry CLI tool:
+- [Awesome MCP Servers by appcypher](https://github.com/appcypher/awesome-mcp-servers)
+- [Awesome Crypto MCP Servers by badkk](https://github.com/badkk/awesome-crypto-mcp-servers)
+- [Awesome MCP Servers by wong2](https://github.com/wong2/awesome-mcp-servers)
 
-```bash
-npm install -g mcp-registry-cli
-```
+#### PulseMCP
 
-2. Submit your plugin:
+Submit your MCP server to [PulseMCP](https://pulsemcp.com/submit) to be included in their directory and potentially featured in their newsletter.
 
-```bash
-mcp-registry-cli submit --package=mcp-powerpoint
-```
+#### MCPHub
 
-3. Follow the prompts to provide any additional information
+[MCPHub](https://github.com/Jeamee/MCPHub) is a desktop app for discovering and managing MCP servers. Submit your MCP server information to be included in their directory.
 
-## Verification
+### 3. Promote Your MCP Server
 
-After submission, the MCP registry maintainers will review your plugin to ensure it meets the quality and security standards. Once approved, your plugin will appear in the MCP registry and be available for all MCP server users.
+- Add MCP-related topics to your GitHub repository: `mcp`, `model-context-protocol`, `mcp-server`
+- Share your plugin on the [MCP Discord Server](https://discord.gg/YOUR_INVITE_LINK) 
+- Post about your plugin on the [r/mcp subreddit](https://www.reddit.com/r/mcp/)
+- Consider adding your plugin to [mcp.run](https://mcp.run/) or [Smithery](https://smithery.dev/)
 
 ## Updating Your Plugin
 
@@ -75,4 +65,5 @@ When you release a new version:
 1. Update the version in your `package.json` and `mcp-manifest.json`
 2. Push changes to GitHub
 3. Publish the new version to npm: `npm publish`
-4. If significant changes were made to the manifest, submit an update to the MCP registry 
+
+Most directories will automatically pick up new versions from npm. 
