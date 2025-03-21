@@ -1,0 +1,98 @@
+{
+  "name": "mcp-powerpoint",
+  "version": "0.1.0",
+  "description": "MCP plugin for PowerPoint operations",
+  "author": "islem-zaraa",
+  "repository": "https://github.com/islem-zaraa/mcp-powerpoint",
+  "license": "MIT",
+  "entry_point": "src/mcp-plugin.js",
+  "type": "node_module",
+  "functions": [
+    {
+      "name": "mcp_powerpoint_create_presentation",
+      "description": "Create a new PowerPoint presentation",
+      "parameters": {
+        "properties": {
+          "outputPath": {
+            "type": "string",
+            "description": "Path where to save the PowerPoint file (must end with .pptx)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the presentation"
+          }
+        },
+        "required": ["outputPath"]
+      }
+    },
+    {
+      "name": "mcp_powerpoint_add_slide",
+      "description": "Add a slide to an existing PowerPoint presentation",
+      "parameters": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path to the PowerPoint file"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the slide"
+          },
+          "content": {
+            "type": "string",
+            "description": "Content of the slide"
+          }
+        },
+        "required": ["file"]
+      }
+    },
+    {
+      "name": "mcp_powerpoint_get_slides",
+      "description": "Get slides from a PowerPoint presentation",
+      "parameters": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path to the PowerPoint file"
+          }
+        },
+        "required": ["file"]
+      }
+    },
+    {
+      "name": "mcp_powerpoint_export_to_pdf",
+      "description": "Export a PowerPoint presentation to PDF",
+      "parameters": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path to the PowerPoint file"
+          },
+          "outputPath": {
+            "type": "string",
+            "description": "Path where to save the PDF file (must end with .pdf)"
+          }
+        },
+        "required": ["file", "outputPath"]
+      }
+    },
+    {
+      "name": "mcp_powerpoint_read_presentation",
+      "description": "Read a PowerPoint presentation metadata and structure",
+      "parameters": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path to the PowerPoint file"
+          }
+        },
+        "required": ["file"]
+      }
+    }
+  ],
+  "tags": ["powerpoint", "presentation", "slides", "office", "mcp"],
+  "requirements": {
+    "platform": ["windows", "macos", "linux"],
+    "dependencies": ["pptxgenjs", "officegen", "fs-extra", "yargs"]
+  }
+} 
