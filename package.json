@@ -5,12 +5,14 @@
   "main": "src/index.js",
   "bin": {
     "mcp-powerpoint": "src/index.js",
-    "mcp-powerpoint-server": "src/mcp-server.js"
+    "mcp-powerpoint-server": "src/mcp-server.js",
+    "mcp-powerpoint-tcp": "src/tcp-server.js"
   },
   "scripts": {
     "test": "jest",
     "start": "node src/index.js",
-    "server": "node src/mcp-server.js"
+    "server": "node src/mcp-server.js",
+    "tcp": "node src/tcp-server.js"
   },
   "keywords": [
     "mcp",
@@ -50,7 +52,7 @@
     "manifestPath": "mcp-manifest.json"
   },
   "smithery": {
-    "entrypoint": "src/mcp-server.js",
+    "entrypoint": "src/tcp-server.js",
     "manifest": "mcp-manifest.json",
     "description": "Create and manipulate PowerPoint presentations with AI",
     "tags": [
