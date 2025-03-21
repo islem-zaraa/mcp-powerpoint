@@ -1,0 +1,10 @@
+{
+  "name": "mcp-powerpoint",
+  "version": "0.1.0",
+  "description": "MCP plugin for PowerPoint operations",
+  "author": "islem-zaraa",
+  "repository": "https://github.com/islem-zaraa/mcp-powerpoint",
+  "npmPackage": "mcp-powerpoint",
+  "manifestUrl": "https://raw.githubusercontent.com/islem-zaraa/mcp-powerpoint/main/mcp-manifest.json",
+  "tags": ["powerpoint", "presentation", "slides", "office"]
+} 
