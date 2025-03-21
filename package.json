@@ -19,7 +19,9 @@
     "model-context-protocol",
     "presentation",
     "slides",
-    "ai-assistant"
+    "ai-assistant",
+    "smithery",
+    "smithery-plugin"
   ],
   "author": "islem-zaraa",
   "repository": {
@@ -46,5 +48,11 @@
   "mcp": {
     "entryPoint": "src/mcp-server.js",
     "manifestPath": "mcp-manifest.json"
+  },
+  "smithery": {
+    "entrypoint": "src/mcp-server.js",
+    "manifest": "mcp-manifest.json",
+    "description": "Create and manipulate PowerPoint presentations with AI",
+    "tags": ["productivity", "office", "document"]
   }
 }
