@@ -119,4 +119,11 @@ MIT
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. 
+Contributions are welcome! Please feel free to submit a Pull Request. ### Topics
+- mcp
+- model-context-protocol
+- mcp-server
+- powerpoint
+- presentation
+- slides
+- office
