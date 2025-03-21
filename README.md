@@ -14,7 +14,7 @@ A Model Context Protocol (MCP) plugin for PowerPoint operations, allowing AI ass
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mcp-powerpoint.git
+git clone https://github.com/islem-zaraa/mcp-powerpoint.git
 
 # Navigate to the project directory
 cd mcp-powerpoint
